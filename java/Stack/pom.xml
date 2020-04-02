@@ -10,9 +10,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>
-
-            </groupId>
+            <groupId>edu.princeton.cs</groupId>
             <artifactId>algs4</artifactId>
             <version>1.0.0</version>
         </dependency>
