@@ -1,5 +1,7 @@
 package stack;
 
+import java.util.Iterator;
+
 public class ResizableArrayStack<I>  implements Stack<I> {
 
     I[] items;
@@ -43,5 +45,20 @@ public class ResizableArrayStack<I>  implements Stack<I> {
         for (int i = 0; i < N; i++)
             copy[i] = items[i];
         items = copy;
+    }
+
+
+    // Additional method for provide more convenience
+
+    public Iterator iterator() {
+        return new ReverseArrayIterator();
+    }
+
+    private class ReverseArrayIterator implements Iterator<I> {
+        private int i = N;
+
+        public boolean hasNext() { return i > 0; }
+
+        public I next() { return items[--i]; }
     }
 }
