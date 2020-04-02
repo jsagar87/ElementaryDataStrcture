@@ -1,9 +1,8 @@
-package queue;
+package bag;
 
 import java.util.Iterator;
 
-public class LinkedListQueue<I> implements Queue<I> {
-
+public class LinkedListBag<I> implements Bag<I> {
     // Singly linked list node
     class Node {
         I data;
@@ -16,7 +15,7 @@ public class LinkedListQueue<I> implements Queue<I> {
     private Node last;
     private int N;
 
-    public void enqueue(I item) {
+    public void add(I item) {
         Node oldLast = last;
         last = new Node();
         last.data = item;
@@ -24,15 +23,6 @@ public class LinkedListQueue<I> implements Queue<I> {
         if (isEmpty()) first = last;
         else    oldLast.next = last;
         N++;
-    }
-
-    public I dequeue() {
-        if (isEmpty())
-            return null;
-        I item = first.data;
-        first = first.next;
-        N--;
-        return item;
     }
 
     public boolean isEmpty() {

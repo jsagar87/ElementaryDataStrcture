@@ -1,7 +1,6 @@
 package stack;
 
 import java.util.Iterator;
-import java.util.ListIterator;
 
 public class LinkedListStack<I>  implements Stack<I>{
 
@@ -11,8 +10,8 @@ public class LinkedListStack<I>  implements Stack<I>{
         Node(I data) { this.data =  data;}
     }
 
-    Node first;
-    int size = 0;
+    private Node first;
+    private int size = 0;
 
     public void push(I item) {
         Node oldNode = first;

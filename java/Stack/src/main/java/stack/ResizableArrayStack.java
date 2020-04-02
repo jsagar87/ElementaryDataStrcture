@@ -4,8 +4,8 @@ import java.util.Iterator;
 
 public class ResizableArrayStack<I>  implements Stack<I> {
 
-    I[] items;
-    int N;
+    private I[] items;
+    private int N;
 
     ResizableArrayStack(){
         items = (I[]) new Object[10];
