@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
-public class InsertionSort {
+public class SelectionSort {
     public static void main(String[] args)
     {
         int N = Integer.parseInt(args[0]);
@@ -12,7 +12,7 @@ public class InsertionSort {
         for (int i = 0; i < N; i++)
             a[i] = StdRandom.uniform();
         Stopwatch watch = new Stopwatch();
-        InsertionSort.sort(a);
+        SelectionSort.sort(a);
         double time = watch.elapsedTime();
         StdOut.println("Time taken is " + time);
         for (int i = 0; i < N; i++)
@@ -22,8 +22,8 @@ public class InsertionSort {
 
     private static void sort(Comparable[] a) {
         for (int i = 0; i < a.length; i++) {
-            for (int j = i; j > 0 ; j--) {
-               if (less(a[j], a[j-1])) exch(a, j, j-1);
+            for (int j = i+1; j < a.length; j++) {
+               if (less(a[j], a[i])) exch(a, i, j);
             }
         }
     }
