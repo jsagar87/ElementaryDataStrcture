@@ -1,7 +1,7 @@
 package sort;
 
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
 
 public class MergeSort {
@@ -14,7 +14,17 @@ public class MergeSort {
         for (int i = 0; i < N; i++)
             a[i] = StdRandom.uniform();
 
+
+//        for (int i = 0; i < N; i++)
+//            a[i] = new Double(N - i);
+
+
+        for (int i = 0; i < N; i++)
+            StdOut.println(a[i]);
+
+        StdOut.println("----------------");
         Stopwatch watch = new Stopwatch();
+
         MergeSort.sort(a);
         double time = watch.elapsedTime();
 
@@ -30,7 +40,7 @@ public class MergeSort {
     }
 
     private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
-        if (lo >= hi) return;
+        if (hi <= lo) return;
         int mid = lo + (hi - lo)/2;
         sort(a, aux, lo, mid);
         sort(a, aux,mid+1, hi);
@@ -38,19 +48,19 @@ public class MergeSort {
     }
 
     private static void merge(Comparable[] a,Comparable[] aux, int lo, int mid, int hi) {
-        assert isSorted(a, lo,mid-1);
-        assert isSorted(a, mid, hi);
+        assert isSorted(a, lo,mid);
+        assert isSorted(a, mid+1, hi);
         // Copy
         for (int k = lo; k<= hi; k++)
             aux[k] = a[k];
 
         // merge
         int i = lo, j = mid + 1;
-        for (int k = lo ; k <=hi ; k++) {
-            if ( i > mid )            a[k] = aux[j++] ;
-            else if ( j > hi )        a[k] = aux[i++] ;
-            else if (less(a[j],a[i])) a[k] = aux[j++] ;
-            else                      a[k] = aux[i++] ;
+        for (int k = lo ; k <=hi ; ++k) {
+            if ( i > mid )                a[k] = aux[j++] ;
+            else if ( j > hi )            a[k] = aux[i++] ;
+            else if (less(aux[j],aux[i])) a[k] = aux[j++] ;
+            else                          a[k] = aux[i++] ;
         }
         assert isSorted(a, lo, hi);
     }
@@ -66,8 +76,8 @@ public class MergeSort {
     }
 
     private static boolean isSorted(Comparable[] a, int lo, int hi) {
-        for (int i = 0; i<a.length; i++) {
-            if (less(a[i+1],a[i]))
+        for (int i = lo+1; i<=hi; i++) {
+            if (less(a[i],a[i-1]))
                 return false;
         }
         return true;
