@@ -4,6 +4,8 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
+import java.util.Comparator;
+
 public class SelectionSort {
     public static void main(String[] args)
     {
@@ -28,12 +30,24 @@ public class SelectionSort {
         }
     }
 
+    private static void sort(Object[] a, Comparator comparator) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i+1; j < a.length; j++) {
+                if (less(comparator, a[j], a[i])) exch(a, i, j);
+            }
+        }
+    }
+
     private static boolean less(Comparable one, Comparable other) {
         return one.compareTo(other) < 0 ;
     }
 
-    private static void exch(Comparable[] a, int x, int y) {
-        Comparable temp = a[x];
+    private static boolean less(Comparator comparator, Object one, Object other) {
+        return comparator.compare(one, other) < 0 ;
+    }
+
+    private static void exch(Object[] a, int x, int y) {
+        Object temp = a[x];
         a[x] = a[y];
         a[y] = temp;
     }

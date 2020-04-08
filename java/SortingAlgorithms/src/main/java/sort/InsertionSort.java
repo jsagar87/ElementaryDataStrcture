@@ -4,6 +4,8 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
+import java.util.Comparator;
+
 public class InsertionSort {
     public static void main(String[] args)
     {
@@ -28,12 +30,25 @@ public class InsertionSort {
         }
     }
 
-    private static boolean less(Comparable one, Comparable other) {
+    private static void sort(Comparable[] a, Comparator comparator) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i; j > 0 ; j--) {
+                if (less(comparator, a[j], a[j-1]))
+                    exch(a, j, j-1);
+            }
+        }
+    }
+
+    private static boolean less( Comparable one, Comparable other) {
         return one.compareTo(other) < 0 ;
     }
 
-    private static void exch(Comparable[] a, int x, int y) {
-        Comparable temp = a[x];
+    private static boolean less(Comparator comparator, Object one, Object other) {
+        return comparator.compare(one, other) < 0 ;
+    }
+
+    private static void exch(Object[] a, int x, int y) {
+        Object temp = a[x];
         a[x] = a[y];
         a[y] = temp;
     }
