@@ -5,8 +5,8 @@ project(StackLib VERSION 1.0.0)
 add_library(
     libstack
     Stack.hpp
-    ResizableArrayStack.cpp
     LinkedListStack.cpp
+    ResizableArrayStack.cpp
 )
 
 add_executable(stack main.cpp)
