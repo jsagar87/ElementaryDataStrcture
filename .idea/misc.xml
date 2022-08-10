@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/java/Bag/pom.xml" />
+        <option value="$PROJECT_DIR$/java/Queue/pom.xml" />
+        <option value="$PROJECT_DIR$/java/Stack/pom.xml" />
+        <option value="$PROJECT_DIR$/java/UnionFind/pom.xml" />
+        <option value="$PROJECT_DIR$/java/SymbolTable/pom.xml" />
+        <option value="$PROJECT_DIR$/java/SortingAlgorithms/pom.xml" />
+        <option value="$PROJECT_DIR$/java/LinkedList/pom.xml" />
+        <option value="$PROJECT_DIR$/java/DynamicProgramming/pom.xml" />
+        <option value="$PROJECT_DIR$/BackTracking/pom.xml" />
+        <option value="$PROJECT_DIR$/java/BackTracking/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>

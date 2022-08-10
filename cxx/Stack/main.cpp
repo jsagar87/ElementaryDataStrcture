@@ -20,7 +20,7 @@ int main(int argc, char **argv[]) {
     stackInt = &llStackInt ;
     stackString = &llstackString;
 
-    stackInt-> push(1);
+    stackInt->push(1);
     stackString->push("one");
 
 }
