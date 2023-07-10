@@ -60,5 +60,12 @@ public class LinkedListQueue<I> implements Queue<I> {
             current = current.next;
             return item;
         }
+
+        @Override
+        public void remove() {
+                throw new UnsupportedOperationException("remove");
+        }
     }
+
+
 }

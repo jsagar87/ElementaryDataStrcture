@@ -9,15 +9,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DynamicProgramming" />
-        <module name="BackTracking" />
+        <module name="Trees" />
+        <module name="MemoryLeak" />
         <module name="Bag" />
         <module name="UnionFInd" />
         <module name="SymbolTable" />
-        <module name="Queue" />
-        <module name="SortingAlgorithms" />
+        <module name="Leetcode" />
         <module name="LinkedList" />
         <module name="Stack" />
+        <module name="DynamicProgramming" />
+        <module name="BackTracking" />
+        <module name="Graphs" />
+        <module name="Queue" />
+        <module name="SortingAlgorithms" />
       </profile>
     </annotationProcessing>
   </component>

@@ -14,8 +14,13 @@
         <option value="$PROJECT_DIR$/java/DynamicProgramming/pom.xml" />
         <option value="$PROJECT_DIR$/BackTracking/pom.xml" />
         <option value="$PROJECT_DIR$/java/BackTracking/pom.xml" />
+        <option value="$PROJECT_DIR$/java/Graphs/pom.xml" />
+        <option value="$PROJECT_DIR$/java/MemoryLeak/pom.xml" />
+        <option value="$PROJECT_DIR$/Trees/pom.xml" />
+        <option value="$PROJECT_DIR$/java/Trees/pom.xml" />
+        <option value="$PROJECT_DIR$/java/Leetcode/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>

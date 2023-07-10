@@ -1,5 +1,5 @@
 #ifndef UNION_FIND_INCLUDE
-#define UNION_FIND_INCLUD
+#define UNION_FIND_INCLUDE
 
 namespace UnionFind {
 

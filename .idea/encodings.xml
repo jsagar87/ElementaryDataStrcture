@@ -3,9 +3,29 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/java/BackTracking/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/BackTracking/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Bag/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Bag/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/DynamicProgramming/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/DynamicProgramming/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Graphs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Graphs/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Leetcode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Leetcode/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/LinkedList/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/LinkedList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/MemoryLeak/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/MemoryLeak/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Queue/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Queue/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/SortingAlgorithms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/SortingAlgorithms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Stack/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Stack/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/SymbolTable/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/SymbolTable/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Trees/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/Trees/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/UnionFind/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/UnionFind/src/main/resources" charset="UTF-8" />
   </component>
 </project>
